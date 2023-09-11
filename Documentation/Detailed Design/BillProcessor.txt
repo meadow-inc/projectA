@@ -1,0 +1,224 @@
+----------------------
+BILL PROCESSOR CLASS DESIGN
+----------------------
+
+Attributes (Private):
+---------------------
+1. infosheet: InfoSheet
+   Description: Represents the information sheet containing various details related to the property.
+
+2. tenant: Tenant
+----------------------
+BILL PROCESSOR CLASS DESIGN
+----------------------
+
+Attributes (Private):
+---------------------
+1. infosheet: InfoSheet
+   Description: Represents the information sheet containing various details related to the property.
+
+2. tenant: Tenant
+   Description: Represents the tenant for whom the bill is to be processed.
+
+Methods (Public):
+-----------------
+1. __init__(self, infosheet: InfoSheet, tenant: Tenant):
+   Description: Constructor for the BillProcessor class. Initializes the attributes with given values.
+
+2. process() -> Bill:
+   Description: Processes the information from both InfoSheet and Tenant to generate a Bill.
+
+
+
+Methods (Private):
+------------------
+1. _calc_muell_einheitspreis() -> float:
+   Description: Retrieves the unit price for waste disposal.
+
+2. _calc_muell_multiplikator() -> float:
+   Description: Retrieves the multiplier for waste disposal.
+
+3. _calc_wasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for water usage.
+
+4. _calc_wasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for water usage.
+
+5. _calc_wasser_grundgebuehr_einheitspreis() -> float:
+   Description: Retrieves the unit price for the basic water fee.
+
+6. _calc_wasser_grundgebuehr_multiplikator() -> float:
+   Description: Retrieves the multiplier for the basic water fee.
+
+7. _calc_schmutz_niederschlagswasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for wastewater and stormwater.
+
+8. _calc_schmutz_niederschlagswasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for wastewater and stormwater.
+
+9. _calc_strom_allgemein_einheitspreis() -> float:
+   Description: Retrieves the unit price for general electricity.
+
+10. _calc_strom_allgemein_multiplikator() -> float:
+    Description: Retrieves the multiplier for general electricity.
+
+11. _calc_grundsteuer_einheitspreis() -> float:
+    Description: Retrieves the unit price for property tax.
+
+12. _calc_grundsteuer_multiplikator() -> float:
+    Description: Retrieves the multiplier for property tax.
+
+13. _calc_feuer_haftpflicht_einheitspreis() -> float:
+    Description: Retrieves the unit price for fire and liability insurance.
+
+14. _calc_feuer_haftpflicht_multiplikator() -> float:
+    Description: Retrieves the multiplier for fire and liability insurance.
+
+15. _calc_hausmeister_einheitspreis() -> float:
+    Description: Retrieves the unit price for janitor services.
+
+16. _calc_hausmeister_multiplikator() -> float:
+    Description: Retrieves the multiplier for janitor services.
+
+Purpose:
+--------
+The purpose of the BillProcessor class is to calculate the bill for a specific tenant based on the provided InfoSheet and the details associated with the tenant. It processes individual components of the bill by fetching unit prices and their respective multipliers, ultimately leading to the creation of a Bill.
+
+---------------------
+BILL PROCESSOR CLASS DESIGN
+----------------------
+
+Attributes (Private):
+---------------------
+1. infosheet: InfoSheet
+   Description: Represents the information sheet containing various details related to the property.
+
+2. tenant: Tenant
+   Description: Represents the tenant for whom the bill is to be processed.
+
+Methods (Public):
+-----------------
+1. __init__(self, infosheet: InfoSheet, tenant: Tenant):
+   Description: Constructor for the BillProcessor class. Initializes the attributes with given values.
+
+2. process() -> Bill:
+   Description: Processes the information from both InfoSheet and Tenant to generate a Bill.
+
+Methods (Private):
+------------------
+1. _calc_muell_einheitspreis() -> float:
+   Description: Retrieves the unit price for waste disposal.
+
+2. _calc_muell_multiplikator() -> float:
+   Description: Retrieves the multiplier for waste disposal.
+
+3. _calc_wasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for water usage.
+
+4. _calc_wasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for water usage.
+
+5. _calc_wasser_grundgebuehr_einheitspreis() -> float:
+   Description: Retrieves the unit price for the basic water fee.
+
+6. _calc_wasser_grundgebuehr_multiplikator() -> float:
+   Description: Retrieves the multiplier for the basic water fee.
+
+7. _calc_schmutz_niederschlagswasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for wastewater and stormwater.
+
+8. _calc_schmutz_niederschlagswasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for wastewater and stormwater.
+
+9. _calc_strom_allgemein_einheitspreis() -> float:
+   Description: Retrieves the unit price for general electricity.
+
+10. _calc_strom_allgemein_multiplikator() -> float:
+    Description: Retrieves the multiplier for general electricity.
+
+11. _calc_grundsteuer_einheitspreis() -> float:
+    Description: Retrieves the unit price for property tax.
+
+12. _calc_grundsteuer_multiplikator() -> float:
+    Description: Retrieves the multiplier for property tax.
+
+13. _calc_feuer_haftpflicht_einheitspreis() -> float:
+    Description: Retrieves the unit price for fire and liability insurance.
+
+14. _calc_feuer_haftpflicht_multiplikator() -> float:
+    Description: Retrieves the multiplier for fire and liability insurance.
+
+15. _calc_hausmeister_einheitspreis() -> float:
+    Description: Retrieves the unit price for janitor services.
+
+16. _calc_hausmeister_multiplikator() -> float:
+    Description: Retrieves the multiplier for janitor services.
+
+Purpose:
+--------
+The purpose of the BillProcessor class is to calculate the bill for a specific tenant based on the provided InfoSheet and the details associated with the tenant. It processes individual components of the bill by fetching unit prices and their respective multipliers, ultimately leading to the creation of a Bill.
+
+   Description: Represents the tenant for whom the bill is to be processed.
+
+Methods (Public):
+-----------------
+1. __init__(self, infosheet: InfoSheet, tenant: Tenant):
+   Description: Constructor for the BillProcessor class. Initializes the attributes with given values.
+
+2. process() -> Bill:
+   Description: Processes the information from both InfoSheet and Tenant to generate a Bill.
+
+Methods (Private):
+------------------
+1. _calc_muell_einheitspreis() -> float:
+   Description: Retrieves the unit price for waste disposal.
+
+2. _calc_muell_multiplikator() -> float:
+   Description: Retrieves the multiplier for waste disposal.
+
+3. _calc_wasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for water usage.
+
+4. _calc_wasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for water usage.
+
+5. _calc_wasser_grundgebuehr_einheitspreis() -> float:
+   Description: Retrieves the unit price for the basic water fee.
+
+6. _calc_wasser_grundgebuehr_multiplikator() -> float:
+   Description: Retrieves the multiplier for the basic water fee.
+
+7. _calc_schmutz_niederschlagswasser_einheitspreis() -> float:
+   Description: Retrieves the unit price for wastewater and stormwater.
+
+8. _calc_schmutz_niederschlagswasser_multiplikator() -> float:
+   Description: Retrieves the multiplier for wastewater and stormwater.
+
+9. _calc_strom_allgemein_einheitspreis() -> float:
+   Description: Retrieves the unit price for general electricity.
+
+10. _calc_strom_allgemein_multiplikator() -> float:
+    Description: Retrieves the multiplier for general electricity.
+
+11. _calc_grundsteuer_einheitspreis() -> float:
+    Description: Retrieves the unit price for property tax.
+
+12. _calc_grundsteuer_multiplikator() -> float:
+    Description: Retrieves the multiplier for property tax.
+
+13. _calc_feuer_haftpflicht_einheitspreis() -> float:
+    Description: Retrieves the unit price for fire and liability insurance.
+
+14. _calc_feuer_haftpflicht_multiplikator() -> float:
+    Description: Retrieves the multiplier for fire and liability insurance.
+
+15. _calc_hausmeister_einheitspreis() -> float:
+    Description: Retrieves the unit price for janitor services.
+
+16. _calc_hausmeister_multiplikator() -> float:
+    Description: Retrieves the multiplier for janitor services.
+
+Purpose:
+--------
+The purpose of the BillProcessor class is to calculate the bill for a specific tenant based on the provided InfoSheet and the details associated with the tenant. It processes individual components of the bill by fetching unit prices and their respective multipliers, ultimately leading to the creation of a Bill.
+
